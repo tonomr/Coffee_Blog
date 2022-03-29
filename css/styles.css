@@ -4,6 +4,7 @@
 
     --primaryColor: #784D3C;
     --whiteColor: #FFFFFF;
+    --grayColor: #e1e1e1;
     --blackColor: #000000;
 }
 
@@ -131,4 +132,35 @@ img {
         grid-template-columns: 2fr 1fr;
         column-gap: 4rem;
     }
+}
+
+.entry {
+    border-bottom: 1px solid var(--grayColor);
+    margin-bottom: 2rem;
+}
+.entry:last-of-type {
+    border: none;
+    margin-bottom: 0;
+}
+
+.button {
+    display: block;
+    font-family: var(--headingFont);
+    color: var(--whiteColor);
+    text-align: center;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+@media (min-width: 768px) {
+    .button {
+        display: inline-block;
+    }
+    
+}
+
+.button--primary {
+    background-color: var(--blackColor);
 }
