@@ -186,14 +186,40 @@ img {
     margin-bottom: 0;
 }
 
-.course-widget__label {
+.course-widget__label, .course__label {
     font-family: var(--headingFont);
     font-weight: 700;
     font-size: 2rem;
 }
 
-.course-widget__info {
+.course-widget__info, .course__info {
     font-weight: 400;
+}
+
+/* About Us */
+@media (min-width: 768px) {
+    .about-us {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+}
+
+/* Courses */
+.course {
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--grayColor);
+}
+@media (min-width: 768px) {
+    .course {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem;
+    }
+}
+
+.course:last-of-type {
+    border: none;
 }
 
 /* Footer */
