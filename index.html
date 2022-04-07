@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    
+
+
     <title>Coffee Blog</title>
     <!-- Prefetch -->
     <link rel="prefetch" href="about_us.html" as="document">
@@ -20,11 +20,11 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" crossorigin="crossorigin" as="font">
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"
+        crossorigin="crossorigin" as="font">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"
         rel="stylesheet">
-
-    <link rel="preload" href="img/blog1.jpg" as="image">
 </head>
 
 <body>
@@ -54,7 +54,10 @@
             <h3>Our Blogs</h3>
             <article class="entry">
                 <div class="entry-img">
-                    <img src="img/blog1.jpg" alt="blog image" loading="lazy">
+                    <picture>
+                        <source srcset="img/blog1.webp" type="image/webp" loading="lazy">
+                        <img src="img/blog1.jpg" alt="blog image" loading="lazy">
+                    </picture>
                 </div>
                 <div class="entry-content">
                     <h4 class="no-margin">Types of coffee beans</h4>
@@ -67,7 +70,10 @@
 
             <article class="entry">
                 <div class="entry-img">
-                    <img src="img/blog2.jpg" alt="blog image" loading="lazy">
+                    <picture>
+                        <source srcset="img/blog2.webp" type="image/webp" loading="lazy">
+                        <img src="img/blog2.jpg" alt="blog image" loading="lazy">
+                    </picture>
                 </div>
                 <div class="entry-content">
                     <h4 class="no-margin">3 delicious coffee recipes</h4>
@@ -80,7 +86,10 @@
 
             <article class="entry">
                 <div class="entry-img">
-                    <img src="img/blog3.jpg" alt="blog image" loading="lazy">
+                    <picture>
+                        <source srcset="img/blog3.webp" type="image/webp" loading="lazy">
+                        <img src="img/blog3.jpg" alt="blog image" loading="lazy">
+                    </picture>
                 </div>
                 <div class="entry-content">
                     <h4 class="no-margin">Benefits of coffee</h4>
@@ -128,6 +137,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="js/modernizr.js"></script>
 
 </body>
 
