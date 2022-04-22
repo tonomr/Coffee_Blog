@@ -1,97 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <title>Coffee Blog</title>
-    <meta name="description" content="Coffee Blog Web Page">
+    <meta name="description" content="Coffee Blog Web Page" />
 
     <!-- Prefetch -->
-    <link rel="prefetch" href="about_us.html" as="document">
+    <link rel="prefetch" href="about_us.html" as="document" />
 
     <!-- Preload -->
-    <link rel="preload" href="css/normalize.css" as="style">
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preload" href="css/normalize.css" as="style" />
+    <link rel="stylesheet" href="css/normalize.css" />
 
-    <link rel="preload" href="css/styles.css" as="style">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preload" href="css/styles.css" as="style" />
+    <link rel="stylesheet" href="css/styles.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload"
-        href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"
-        crossorigin="crossorigin" as="font">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"
-        rel="stylesheet">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet preload prefetch"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"
+      crossorigin="crossorigin"
+      as="style"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <div class="container">
-            <div class="bar">
-                <a class="logo" href="index.html">
-                    <h1 class="logo__text no-margin center-text">Coffee<span class="logo__bold">Blog</span></h1>
-                </a>
+      <div class="container">
+        <div class="bar">
+          <a class="logo" href="index.html">
+            <h1 class="logo__text no-margin center-text">
+              Coffee<span class="logo__bold">Blog</span>
+            </h1>
+          </a>
 
-                <nav class="navegation">
-                    <a href="about_us.html" class="navegation__link">About Us</a>
-                    <a href="courses.html" class="navegation__link">Courses</a>
-                    <a href="contact.html" class="navegation__link">Contact</a>
-                </nav>
-            </div>
+          <nav class="navegation">
+            <a href="about_us.html" class="navegation__link">About Us</a>
+            <a href="courses.html" class="navegation__link">Courses</a>
+            <a href="contact.html" class="navegation__link">Contact</a>
+          </nav>
         </div>
+      </div>
 
-        <div class="header__text">
-            <h2 class="no-margin">Coffee Blog, Tips and Courses</h2>
-            <p class="no-margin">Learn from experts with the best recipes and tricks</p>
-        </div>
+      <div class="header__text">
+        <h2 id="heading" class="no-margin">Coffee Blog, Tips and Courses</h2>
+        <p class="no-margin">
+          Learn from experts with the best recipes and tricks
+        </p>
+      </div>
     </header>
 
     <main class="container">
-        <h3 class="center-text">Contact</h3>
+      <h3 class="center-text">Contact</h3>
 
-        <div class="contact-bg"></div>
-        <form class="form">
-            <div class="camp">
-                <label class="camp__label" for="name">Name:</label>
-                <input class="camp__field" type="text" placeholder="Your Name" id="name">
-            </div>
-            <div class="camp">
-                <label class="camp__label" for="email">E-Mail:</label>
-                <input class="camp__field" type="email" placeholder="Your E-Mail" id="email">
-            </div>
-            <div class="camp">
-                <label class="camp__label" for="msg">Message:</label>
-                <textarea class="camp__field camp__field--textarea" id="msg"></textarea>
-            </div>
+      <div class="contact-bg"></div>
+      <form class="form">
+        <div class="camp">
+          <label class="camp__label" for="name">Name:</label>
+          <input
+            class="camp__field"
+            type="text"
+            placeholder="Your Name"
+            id="name"
+          />
+        </div>
+        <div class="camp">
+          <label class="camp__label" for="email">E-Mail:</label>
+          <input
+            class="camp__field"
+            type="email"
+            placeholder="Your E-Mail"
+            id="email"
+          />
+        </div>
+        <div class="camp">
+          <label class="camp__label" for="msg">Message:</label>
+          <textarea
+            class="camp__field camp__field--textarea"
+            id="msg"
+          ></textarea>
+        </div>
 
-            <div class="camp">
-                <input type="submit" value="Send" class="button button--primary">
-            </div>
-        </form>
+        <div class="camp">
+          <input type="submit" value="Send" class="button button--primary" />
+        </div>
+      </form>
     </main>
 
     <footer class="footer">
-        <div class="container">
-            <div class="bar">
-                <a class="logo" href="index.html">
-                    <h1 class="logo__text no-margin center-text">Coffee<span class="logo__bold">Blog</span></h1>
-                </a>
+      <div class="container">
+        <div class="bar">
+          <a class="logo" href="index.html">
+            <h1 class="logo__text no-margin center-text">
+              Coffee<span class="logo__bold">Blog</span>
+            </h1>
+          </a>
 
-                <nav class="navegation">
-                    <a href="about_us.html" class="navegation__link">About Us</a>
-                    <a href="courses.html" class="navegation__link">Courses</a>
-                    <a href="contact.html" class="navegation__link">Contact</a>
-                </nav>
-            </div>
+          <nav class="navegation">
+            <a href="about_us.html" class="navegation__link">About Us</a>
+            <a href="courses.html" class="navegation__link">Courses</a>
+            <a href="contact.html" class="navegation__link">Contact</a>
+          </nav>
         </div>
+      </div>
     </footer>
 
     <script src="js/modernizr.js"></script>
-
-</body>
-
+    <script src="js/scripts.js"></script>
+  </body>
 </html>
